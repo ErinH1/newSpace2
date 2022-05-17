@@ -6,7 +6,7 @@ G <- dim(fit_MSFA$Phi)[1]
 F <- dim(fit_MSFA$Phi)[2]
 L <- length(dim(fit_MSFA$Phi))
 
-dyn.load("bigtdsub.dll")
+
 
 #Call the OpenMP program
 SpaceProc <- .Fortran("bigtdsub",n=as.integer(G),
